@@ -13,6 +13,7 @@ final class ImmutableMatrix {
         this.matrix = new double[n][m];
         this.n = n;
         this.m = m;
+        TheGenerationOfMatrix(this.n, this.m);
     }
 
 
@@ -50,6 +51,7 @@ final class ImmutableMatrix {
                 for (int j = 0; j < masf[0].length; j++)
                     this.matrix[i][j] = masf[i][j];
     }
+
 
     public void CopyOfMatrix(Matrix masf) {
         CopyOfMatrix(masf.matrix);
@@ -135,21 +137,12 @@ final class ImmutableMatrix {
         if (getClass() != o.getClass())
             return false;
         ImmutableMatrix mx = (ImmutableMatrix) o;
-        return n == mx.n && m == mx.m && Arrays.deepEquals(matrix, mx.matrix);
+    return n == mx.n && m == mx.m && Arrays.deepEquals(matrix, mx.matrix);
     }
 
 
-    //@Override
-    //public int hashCode() {
-    //    int result = Objects.hash(n, m);
-    //    for (int i = 0; i < this.n; i++)
-    //        result = 31 * result + Arrays.deepHashCode(matrix);
-    //    return result;
-    //}
-
-
-    public void TheGenerationOfMatrixRow(int n) {
-        TheGenerationOfMatrix(1, n);
+    public ImmutableMatrix TheGenerationOfMatrixRow(int n) {
+        return new ImmutableMatrix(1, n);
     }
 
 
