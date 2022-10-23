@@ -4,6 +4,17 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+
+        /* Example */
+        //ImmutableMatrix matrix1 = new ImmutableMatrix(2);
+        //matrix1.TheDisplayOfMatrix();
+        //System.out.println();
+//
+        //ImmutableMatrix matrix2 = new ImmutableMatrix(matrix1);
+        //matrix2.TransposeMatrix();
+        //matrix2.TheDisplayOfMatrix();
+        //System.out.println(matrix1.equals(matrix2));
+
         /* 2 */
         //Matrix matrix1 = new Matrix();
         //matrix1.TheDisplayOfMatrix();
@@ -20,8 +31,7 @@ public class Main {
 
 
         /* 4 */
-        //Matrix matrix1 = new Matrix();
-        //matrix1.TheGenerationOfMatrix(2, 2);
+        //ImmutableMatrix matrix1 = new ImmutableMatrix(2);
         //System.out.println("Елемент матриці: ");
         //System.out.println(matrix1.GetTheElementOfMatrix(0, 1));
         //System.out.println();
@@ -61,21 +71,21 @@ public class Main {
 
 
         /* 8 */
-        //Matrix matrix1 = new Matrix();
-        //matrix1.TheGenerationOfMatrixRow(5);
+        //ImmutableMatrix matrix1 = new ImmutableMatrix();
+        //matrix1 = matrix1.TheGenerationOfMatrixRow(5);
         //matrix1.TheDisplayOfMatrix();
         //System.out.println(Arrays.toString(matrix1.Get_Size()));
 
 
         /* 9 */
-        Matrix matrix1 = new Matrix();
-        matrix1.TheGenerationOfMatrix(3, 6);
-        matrix1.TheDisplayOfMatrix();
-        System.out.println(Arrays.toString(matrix1.Get_Size()));
-        System.out.println();
-        matrix1.TransposeMatrix();
-        matrix1.TheDisplayOfMatrix();
-        Matrix matrix2 = new Matrix(matrix1);
-        System.out.println(Arrays.toString(matrix2.Get_Size()));
+        //Matrix matrix1 = new Matrix();
+        //matrix1.TheGenerationOfMatrix(3, 6);
+        //matrix1.TheDisplayOfMatrix();
+        //System.out.println(Arrays.toString(matrix1.Get_Size()));
+        //System.out.println();
+        //matrix1.TransposeMatrix();
+        //matrix1.TheDisplayOfMatrix();
+        //Matrix matrix2 = new Matrix(matrix1);
+        //System.out.println(Arrays.toString(matrix2.Get_Size()));
     }
 }
