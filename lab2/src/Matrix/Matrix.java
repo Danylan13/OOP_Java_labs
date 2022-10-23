@@ -90,6 +90,15 @@ public class Matrix {
     }
 
 
+    public void TheGenerationOfMatrix() {
+        for (int i = 0; i < this.n; i++) {
+            for (int j = 0; j < this.m; j++) {
+                this.matrix[i][j] = round(Math.random() * 2001 - 1000);
+            }
+        }
+    }
+
+
     public void TheGenerationOfMatrix(int n) {
         TheGenerationOfMatrix(n, n);
     }
