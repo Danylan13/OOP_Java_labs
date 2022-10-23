@@ -139,6 +139,15 @@ final class ImmutableMatrix {
         ImmutableMatrix mx = (ImmutableMatrix) o;
     return n == mx.n && m == mx.m && Arrays.deepEquals(matrix, mx.matrix);
     }
+    
+    
+    //@Override
+    //public int hashCode() {
+    //    int result = Objects.hash(n, m);
+    //    for (int i = 0; i < n; i++)
+    //        result = 31 * result + Arrays.deepHashCode(matrix);
+    //    return result;
+    //}
 
 
     public ImmutableMatrix TheGenerationOfMatrixRow(int n) {
