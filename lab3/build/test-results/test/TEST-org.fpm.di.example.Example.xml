@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.fpm.di.example.Example" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-01-11T11:51:36" hostname="DESKTOP-BOR7OCN" time="0.009">
+  <properties/>
+  <testcase name="shouldInjectSingleton" classname="org.fpm.di.example.Example" time="0.003"/>
+  <testcase name="shouldInjectPrototype" classname="org.fpm.di.example.Example" time="0.0"/>
+  <testcase name="Test1" classname="org.fpm.di.example.Example" time="0.002"/>
+  <testcase name="Test2" classname="org.fpm.di.example.Example" time="0.001"/>
+  <testcase name="Test3" classname="org.fpm.di.example.Example" time="0.001"/>
+  <testcase name="Test4" classname="org.fpm.di.example.Example" time="0.0"/>
+  <testcase name="Test5" classname="org.fpm.di.example.Example" time="0.001"/>
+  <testcase name="shouldBuildInjectionGraph" classname="org.fpm.di.example.Example" time="0.0"/>
+  <testcase name="shouldBuildInjectDependencies" classname="org.fpm.di.example.Example" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
